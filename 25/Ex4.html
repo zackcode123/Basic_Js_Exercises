@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex4</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container" style="border: 3px solid skyblue; border-radius: 10px;">
+
+        <div>
+            <div class="jumbotron">
+                <h1 class="display-6">ALUNO</h1>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label>Nome</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label>RG</label>
+                <input type="text" class="form-control" id="rg">
+            </div>
+            <div class="form-group col-md">
+                <label>CPF</label>
+                <input type="text" class="form-control" id="cpf">
+            </div>
+            <div class="form-group col-md">
+                <label>E-mail</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+        </div>
+
+        <div class="form-row justify-content-around">
+            <div class="form-group col-md-1">
+                <label>Nota 01</label>
+                <input type="text" class="form-control" id="nota1">
+            </div>
+
+            <div class="form-group col-md-1">
+                <label>Nota 02</label>
+                <input type="text" class="form-control" id="nota2">
+            </div>
+
+            <div class="form-group col-md-1">
+                <label>Nota 03</label>
+                <input type="email" class="form-control" id="nota3">
+            </div>
+
+            <div class="form-group col-md-2 align-self-center">
+                <button type="button" class="btn btn-dark" onclick="calcular()">Calcular</button>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Media</label>
+                <input type="text" class="form-control" id="media" disabled>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Situação</label>
+                <input type="text" class="form-control" id="situacao" disabled>
+            </div>
+
+            <div class="form-group col-md-1 align-self-center">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo"
+                    onclick="info()">
+                    Aluno
+                </button>
+
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Informação geral do Aluno</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="modalcorpo">
+                                <script>
+                                    info()
+                                </script>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="js/Ex4.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

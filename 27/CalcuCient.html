@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" style="border: skyblue solid 1px;">
+
+        <div class="jumbotron">
+            <h1 class="display-3">CALCULADORA CIENTIFICA</h1>
+        </div>
+
+        <div class="form-row justify-content-around">
+            <div class="forma-group col-md-3 col-sm-12">
+                <input type="text" class="form-control" placeholder="Digite o primeiro numero" id="n1">
+            </div>
+
+            <div class="forma-group col-md-3 col-sm-12">
+                <select class="form-control" id="calculo">
+                    <option>--Selecione uma Formula</option>
+                    <option value="1">Elevado ao: </option>
+                    <option value="2">Arredondar para numero inteiro mais proximo</option>
+                    <option value="3">Raiz quadrada</option>
+                    <option value="4">Arredondar para proximo numero acima</option>
+                    <option value="5">Arredondar para proximo numero abaixo</option>
+                </select>   
+            </div>
+
+            <div class="forma-group col-md-3 col-sm-12">
+                <input type="text" class="form-control" placeholder="Digite o segundo numero" id="n2">
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row justify-content-end">
+            <div class="forma-group col-md-1 col-sm-12 align-self-end">
+                <button type="button" class="btn btn-primary" onclick="calculaMedia()" id="calcular">Calcular</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="forma-group col-md-12 col-sm-12" >
+            Resultado:
+            <input type="text" class="form-control" id="resultado">
+        </div>
+
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/Ex2.js"></script>
+    </script>
+</body>
+
+</html>

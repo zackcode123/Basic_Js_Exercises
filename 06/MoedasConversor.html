@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio 02</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="display-6">Conversor de Moedas</h1>
+        </div>
+
+        <div class="form-row justify-content-around">
+            <div class="forma-group col-md-5 col-sm-12">
+                <input type="text" class="form-control" placeholder="Digite um valor em reais" id="n1">
+            </div>
+
+            <div class="forma-group col-md-5 col-sm-12">
+                <select class="form-control" id="calculo">
+                    <option>--Selecione uma Moeda--</option>
+                    <option value="1">Dolar</option>
+                    <option value="2">Euro</option>
+                    <option value="3">Peso Argentino</option>
+                    <option value="4">Iene Japão</option>
+                </select>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="row justify-content-end">
+            <div class=" col-md-2 col-sm-12 align-self-end ">
+                <button type="button" class="btn btn-primary" onclick="calculaMedia()" id="calcular">Converter</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="forma-group col-md-12 col-sm-12 ">
+            Resultado:
+            <input type="text" class="form-control" id="resultado">
+        </div>
+
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/Ex2.js"></script>
+    </script>
+</body>
+
+</html>

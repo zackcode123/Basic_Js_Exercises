@@ -1,0 +1,10 @@
+.container {
+    position: relative;
+    top: 20px;
+    background-color: skyblue;
+    border: 2px solid rgb(243, 15, 15);
+}
+
+h1 {
+    text-align: center;
+}
